@@ -1,1 +1,3 @@
-console.log(`Item (${1 + 1}): $${(2095 + 799) / 100}`)
+console.log('hello world')
+
+console.log('quatity')
