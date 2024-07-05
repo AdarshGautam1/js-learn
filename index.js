@@ -1,2 +1,1 @@
-console.log('hello world');
-console.log('second commit');
+console.log(`Item (${1 + 1}): $${(2095 + 799) / 100}`)
