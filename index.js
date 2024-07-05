@@ -1,3 +1,1 @@
-console.log('hello world')
-
-console.log('quatity')
+let quantity = 0;
