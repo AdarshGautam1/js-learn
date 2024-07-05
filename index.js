@@ -1,3 +1,10 @@
+const score = {
+    win: 0,
+    lose: 0,
+    ties: 0
+};
+
+
 function computerMove(){
     let comChoice = '';
 
@@ -46,5 +53,14 @@ function playGame(playerMove){
         }
     }
 
-    alert(`You choose ${playerMove}, computer choose ${pickcomputerMove}. ${result}`)
+    if (result === 'You win'){
+        score.win += 1;
+    }else if (result === 'You lose'){
+        score.lose += 1;
+    }else{
+        score.ties += 1;
+    }
+
+    alert(`You choose ${playerMove}, computer choose ${pickcomputerMove}. ${result}
+        Wins: ${score.win}, Loses: ${score.lose}, Ties: ${score.ties}`)
 }
