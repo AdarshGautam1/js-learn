@@ -1,0 +1,29 @@
+.output-gird, .input-gird{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.input-gird{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.to-do-btn{
+    height: 30px;
+    border: none;
+    background: rgb(37, 162, 37);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+.del-btn{
+    height: 30px;
+    border: none;
+    background: #bd0303;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
