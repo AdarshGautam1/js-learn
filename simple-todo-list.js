@@ -4,8 +4,6 @@ const todoList = [{
 }
 ];
 
-renderToDoList();
-
 function renderToDoList(){
     let innerToDoHTML = '';
     for (let i = 0; i < todoList.length; i++){
@@ -32,16 +30,24 @@ function addTodo(){
     const listItem = inputElement.value;
     const date = dateInput.value;
 
-    todoList.push(
-        {
-            listItem,
-            date
-        }
-    )
+    if (inputElement.value != ''){
+
+        todoList.push(
+            {
+                listItem,
+                date
+            }
+        )
+
+        renderToDoList();
+
+    }
+
+    
 
 
     //console.log(todoList)
     inputElement.value = '';
 
-    renderToDoList();
+    
 }
